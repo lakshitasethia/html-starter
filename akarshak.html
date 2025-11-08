@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ak</title>
+    <link href="https://fonts.googleapis.com/css2?family=Benguiat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="akarshak.css">
+</head>
+<body>
+    <!-- Start Screen -->
+    <div id="startScreen">
+        <h1 id="startHeader">Ak the Boss, Ready?</h1>
+        <button id="startButton">Enter</button>
+    </div>
+
+    <!-- Intro Screen -->
+    <div id="intro">
+        <img id="introImage" src="stranger-things.jpg" alt="Stranger Things" />
+        <div id="darkOverlay"></div>
+        <audio id="introAudio">
+            <source src="stranger-things-audio.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+
+    <!-- Main Content - Birthday Cake -->
+    <div id="mainContent">
+        <div class="stranger-things-bg"></div>
+        
+        <!-- Confetti Container -->
+        <div class="confetti-container" id="confettiContainer"></div>
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Happy Birthday Ak</h1>
+        </div>
+
+        <!-- Cake -->
+        <div class="cake-container">
+            <div class="cake">
+                <!-- Candles with numbers -->
+                <div class="candles">
+                    <div class="candle">
+                        <div class="wick"></div>
+                        <div class="flame"></div>
+                        <div class="number">1</div>
+                    </div>
+                    <div class="candle">
+                        <div class="wick"></div>
+                        <div class="flame"></div>
+                        <div class="number">9</div>
+                    </div>
+                </div>
+
+                <!-- Cake layers -->
+                <div class="cake-layer layer-3">
+                    <div class="frosting"></div>
+                </div>
+                <div class="cake-layer layer-2">
+                    <div class="frosting"></div>
+                </div>
+                <div class="cake-layer layer-1">
+                    <div class="frosting"></div>
+                    <div class="cake-text">Turn Around Look At What You See</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Section with Photo Collage -->
+    <div id="messageSection">
+        <!-- Photo Collage Background -->
+        <div class="photo-collage">
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20250815-WA0015.jpg" alt=""></div>
+                <!-- Replace with: <img src="photo1.jpg" alt="Us"> -->
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20250815-WA0016.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20250924-WA0428.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20250925-WA0022.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251019-WA0033.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251019-WA0034.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251108-WA0003.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251108-WA0004.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251108-WA0005.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251108-WA0006.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251108-WA0007.jpg" alt=""></div>
+            </div>
+            <div class="photo-item">
+                <div class="photo-placeholder"><img src="IMG-20251108-WA0008.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <!-- Floating particles -->
+        <div id="particlesContainer"></div>
+
+        <!-- Message Container -->
+        <div class="message-container">
+            <p class="message-text">
+                Happy birthdayyy AktheBoss, even though I've written so many paragraphs for you before, it'll never be enough, omg I cannot believe you're 19 now. I think we've come a long way since Manali. There's not much to say but thank you for being there for me always, you were there when nobody else was, we've had fights, times when we completelt stopped talking, but in the end, we worked it out like always. I am very grateful for you, I love your random little updates, the pouting face you make when the little things go wrong, trying to act non-chalant when deep down you know it's not okay, your eyes, the way they twinkle and light up when you're happy, the way you smile, the way you laugh at my jokes even when you know they are not funny, the way you order the wrong size sweatshirts from H&M and then complain about them looking like croptops, sometimes you're really funny but let's admit it, I am the funnier one, heheheheh. Okay, coming back, today is Akarshakkkk day, and please never stop being my bestfriend. I love you(probably).❤️
+            </p>
+        </div>
+
+        <!-- Background audio for this section -->
+        <audio id="messageAudio">
+            <source src="final-audio.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+
+    <!-- Final Question Section -->
+    <div id="finalSection">
+        <div class="final-bg-glow"></div>
+        
+        <h1 class="final-question-header">Watch Stranger Things<br>Season 5 with me?</h1>
+        
+        <p class="dare-text">Dare to Click on No?</p>
+        
+        <div class="final-buttons-container">
+            <button class="final-button" id="finalYesBtn">YES!</button>
+            <button class="final-button" id="finalNoBtn">NO</button>
+        </div>
+    </div>
+
+    <!-- Final Reveal -->
+    <div id="finalReveal">
+        <img id="finalRevealImage" src="stranger-things.jpg" alt="Stranger Things Season 5">
+        <div id="finalDarkOverlay"></div>
+        <audio id="finalAudio">
+            <source src="stranger-things-audio.mp3" type="audio/mpeg" />
+        </audio>
+    </div>
+
+    <script src="akarshak.js"></script>
+</body>
+</html>
